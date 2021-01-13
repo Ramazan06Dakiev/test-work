@@ -1,0 +1,286 @@
+@font-face { 
+    font-family: "OCRF-Regular";
+    src: local("OCRF-Regular"),
+         url(/fonts/OCRF-Regular.eot) format("eot"), 
+         url(/fonts/OCRF-Regular.woff) format("woff"), 
+         url(/fonts/OCRF-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'OCRF-Regular', sans-serif;
+}
+.main-conference {
+    margin: 0 auto;
+    width: 550px;
+}
+.main-conference::after {
+    content: '';
+    display: block;
+    background: url(../img/bg-main.svg) no-repeat;
+    width: 870px;
+    height: 575px;
+    position: absolute;
+    top: 57px;
+    right: 350px;
+}
+.main-conference__title{
+    padding-left: 40px;
+    margin-bottom: 46px;
+    text-transform: uppercase;
+}
+.main-conference__list {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.main-programme-block {
+    margin: 100px auto;
+    width: 460px;
+    text-align: center;
+    padding-right: 90px;
+    margin-bottom: 110px;
+}
+.main-programme-block__title{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 70px;
+    
+}
+.main-programme-block__span {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 10px;
+}
+.wrap {
+    display: flex;
+}
+.main-programme-block__span::after{
+    content: '';
+    display: block;
+    background: url(../img/yellow-block.svg) no-repeat;
+    width: 206px;
+    height: 60px;
+    position: relative;
+    top: -44px;
+    right: 0px;
+    z-index: -1;
+}
+.main-programme-days {
+    margin: 110px auto;
+    width: 550px;
+    
+}
+.main-programme-days__title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 15px;
+    text-align: center;
+    color: #fee600;
+}
+.main-programme-days__title::after {
+    content: '';
+    display: block;
+    background: url(../img/grey-block.svg) no-repeat;
+    width: 437px;
+    height: 75px;
+    position: relative;
+    top: -48px;
+    right: -60px;
+    z-index: -1;
+}
+.main-programme-days__list {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.main-programme-days__list::after {
+    content: '';
+    display: block;
+    width: 380px;
+    height: 31px;
+    background-color: #fee600;
+    position: absolute;
+    margin: -31px 0 0 -445px;
+}
+
+.report::after {
+    content: 'Доклад';
+    text-align: end;
+    padding-right: 30px;
+}
+
+.dialogue::after {
+    content: 'Диалог';
+    text-align: end;
+    padding-right: 30px;
+}
+.discussion::after {
+    content: 'Панельная дискуссия';
+    text-align: end;
+    padding-right: 30px;
+}
+.game::after {
+    content: 'Игра';
+    text-align: end;
+    padding-right: 30px;
+}
+
+.opening::after {
+    content: 'Открытие';
+    text-align: end;
+    padding-right: 30px;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .main-programme-days__list::after {
+        width: 416px;
+        margin: -31px 0 0 -485px;
+    }
+
+}
+@media screen and (max-width: 1024px) {
+     .main-conference::after {
+        right: 140px;
+    }
+    .main-programme-days__list::after {
+        width: 245px;
+        margin: -31px 0 0 -277px;
+        font-size: 22px;
+        padding-right: 15px;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    .main-conference {
+        margin: 0 auto;
+        width: 455px;
+    }
+    .main-conference::after {
+        content: '';
+        display: block;
+        background: url(../img/bg-main.svg) no-repeat;
+        width: 650px;
+        background-size: contain;
+        height: 434px;
+        position: absolute;
+        top: 65px;
+        right: 114px;
+    }
+    
+    .main-conference__title {
+        font-size: 22px;
+    }
+    .main-conference__list {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+    .main-programme-days__title::after {
+        right: -100px;
+    }
+    .main-programme-block {
+        margin: 50px auto -50px;
+    }
+    .main-programme-days {
+        width: 645px;
+    }
+    .main-programme-days__list {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .main-programme-days__list::after {
+        width: 547px;
+        position: relative;
+        top: -31px;
+        right: -276px;
+        text-align: center;
+        margin: -12px 0 0 -277px;
+        font-size: 18px;
+        height: 22px;
+    
+    }
+    .main-programme-days__list.days__list::after {
+        top: -55px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main-conference {
+        margin: 0 auto 0 140px;
+        width: 430px;
+    }
+    .main-conference::after {
+        content: '';
+        display: block;
+        background: url(../img/bg-main.svg) no-repeat;
+        width: 580px;
+        background-size: contain;
+        height: 390px;
+        position: absolute;
+        top: 65px;
+        right: -165px;
+    }
+    .main-conference__list {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+    .main-programme-block {
+        margin: 50px auto -50px 107px;
+    }
+    .main-programme-block__title {
+        font-size: 22px;
+        margin-right: 65px;
+    }
+    .main-programme-block__span {
+        font-size: 20px;
+    }
+    .main-programme-block__span::after {
+        width: 175px;
+        background-size: contain;
+        top: -37px;
+    }
+    .main-programme-days {
+        margin: 70px auto;
+    }
+    .main-programme-days__list {
+        font-size: 17px;
+    }
+    .main-programme-days {
+        width: 625px;
+    }
+    .main-programme-days__title {
+        font-size: 20px;
+    }
+    .main-programme-days__title::after {
+        right: -142px;
+        top: -40px;
+        width: 330px;
+        background-size: contain;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .main-conference::after {
+        right: -222px;
+    }
+    .main-conference__title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-conference::after {
+        right: -275px;
+    }
+    .main-programme-days__title::after {
+        right: -150px;
+        
+    }
+}
